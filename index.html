@@ -4,88 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codeflix signin</title>
+    <title>Codeflix</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/signin.css">
+    <link rel="stylesheet" href="styles/info.css">
+    <!-- 
+    <style>
+    /* selector */
+    /* id */
+    #add {
+        color: chocolate;
+    }
+    /* class */
+    .secondary {
+        color: blueviolet;
+    }
+    .bg-blue {
+        color: blue;
+    }
+    /* tag */
+    h1 {
+        color: red;
+        background-color: green;
+    }
+    h2 {
+        color: blue;
+    }
+    h2 {
+        color: black !important;
+        color: red;
+        color: green;
+    }
+    </style>
+    -->
 </head>
 
-<body class="main-bg container">
-    <main class="card">
-        <h1>Signin</h1>
-        <form method="post" novalidate>
-            <div class="form_input">
-                <label for="mail">Pon tu correo</label>
-                <input type="email" id="mail" name="mail" autocomplete="off" placeholder="Ex. test@test.com"
-                    value="test@test.com" required>
+<body class="main-bg">
+    <!-- Comentario -->
+    <!--
+    <ul>
+    <li>
+        Show 1
+        <ul>
+            <li>Episode 1</li>
+            <li>Episode 2</li>
+        </ul>
+    </li>
+    <li>Show 2</li>
+    <li>Show 3</li>
+    </ul>
+    <ol type="A">
+    <li>
+        HTML + CSS
+        <ol>
+            <li>Intro</li>
+            <li>selectores</li>
+        </ol>
+    </li>
+    <li>JS</li>
+    <li>Modelado</li>
+    <li>Front PRO</li>
+    </ol>
+    <a href="https://keepcoding.io/" target="_blank">link keepcoding</a>
+    <a href="./styles/footer.css">footer.css</a>
+    <a href="#footer">go footer</a>
+    <a href="mailto:keepcoding@test.com">keepcoding</a>
+    <a href="tel:+"></a>
+    -->
+    <header class="header">
+        <img src="assets/app/codeflix.png" alt="Codeflix app">
+        <nav class="nav">
+            <ul class="list">
+                <li class="item">
+                    <a class="btn hidden" href="#shows">Shows</a>
+                </li>
+                <li class="item">
+                    <a class="btn" href="signin.html">Sign in</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Codeflix</h1>
+        <section class="banner">
+            <div class="image"></div>
+            <div class="content">
+                <h2>Unlimited movies, TV shows, and more</h2>
+                <p class="bold">Watch anywhere. Cancel anytime</p>
+                <p>Ready to watch?</p>
             </div>
-            <div class="form_input">
-                <label for="password">password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form_input">
-                <label for="phone">Enter you phone number</label>
-                <input type="tel" id="phone" name="phone" autocomplete="off" required placeholder="format 123-123-1234"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format (123-123-1234)">
-            </div>
+        </section>
+        <section class="info">
             <div>
-                <label for="file">Profile picture</label>
-                <input type="file" name="profile" id="file" multiple accept="image/png">
+                <h2>watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your, phone, tablet, laptop, and TV.</p>
             </div>
-            <!-- <button type="button">Click no submit</button> -->
-
-            <fieldset>
-                <legend>Fav genre</legend>
-                <label for="shows">shows</label>
-                <input type="radio" name="genre" id="shows" value="shows" checked>
-                <label for="docu">Docus</label>
-                <input type="radio" name="genre" id="docu" value="documentary">
-            </fieldset>
-            <!--
-            <fieldset>
-                <legend>Fav programing lang</legend>
-                <label for="js">js</label>
-                <input type="checkbox" name="favlang" id="js" value="js" checked>
-                <label for="python">python</label>
-                <input type="checkbox" name="favlang" id="python" value="python">
-                <label for="go">Go</label>
-                <input type="checkbox" name="favlang" id="go" value="go">
-            </fieldset>
-            -->
-            <div class="form_input">
-                <label for="bio">User bio</label>
-                <textarea name="bio" id="bio" placeholder="Add your bio..." required maxlength="50"></textarea>
+            <div class="assets">
+                <img src="assets/app/device-pile.png" alt="">
+                <video autoplay muted poster="assets/app/catalog.jpg" loop>
+                    <source src="assets/app/video-devices.m4v" type="video/mp4">
+                </video>
             </div>
-
-            <div>
-                <label for="remember">Remember me</label>
-                <input type="checkbox" name="remember" id="remember" required>
-            </div>
-            <!--
-            <input type="number" name="" id="">
-            <input type="color" name="" id="">
-            <input type="date" name="" id="">
-            <input type="month" name="" id="">
-            <input type="range" name="" id="">
-            <input type="time" name="" id="">
-            -->
-            <div class="form_input">
-                <label for="country">Country</label>
-                <select name="country" id="country" autocomplete="off">
-                    <option value="ES">Spain</option>
-                    <option value="CO">Colombia</option>
-                    <option value="US">Usa</option>
-                </select>
-            </div>
-
-            <div>
-                <button class="btn" type="reset">Reset</button>
-                <button class="btn" type="submit">Guardar</button>
-            </div>
-            <!-- <input type="submit" value="Guardar"> -->
-        </form>
+        </section>
+        <section id="shows">
+            <section>
+                <h2>New shows</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="assets/series/serie_1.jpg" alt="show 1">
+                            <figcaption>show 1</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Popular shows</h2>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+        </section>
     </main>
+    <!--
+    <p class="secondary" id="add" style="color: green;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aliquam! Quos sequi expedita ipsam nam inventore natus nulla modi animi eveniet voluptates maiores velit, corrupti
+    eligendi molestias sapiente odio saepe!</p>-->
+    <footer class="footer" id="footer">
+        <p>2025 <strong>Codeflix</strong>. All right reserved.</p>
+    </footer>
 </body>
 
 </html>
+
+
+<section>
+    <h2>{param}</h2>
+    <ul>
+        <li></li>
+    </ul>
+</section>
