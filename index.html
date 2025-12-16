@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/shows.css">
     <!-- 
     <style>
     /* selector */
@@ -49,10 +50,10 @@
     <ul>
     <li>
         Show 1
-    <ul>
-        <li>Episode 1</li>
-        <li>Episode 2</li>
-    </ul>
+        <ul>
+            <li>Episode 1</li>
+            <li>Episode 2</li>
+        </ul>
     </li>
     <li>Show 2</li>
     <li>Show 3</li>
@@ -60,10 +61,10 @@
     <ol type="A">
     <li>
         HTML + CSS
-    <ol>
-        <li>Intro</li>
-        <li>selectores</li>
-    </ol>
+        <ol>
+            <li>Intro</li>
+            <li>selectores</li>
+        </ol>
     </li>
     <li>JS</li>
     <li>Modelado</li>
@@ -88,16 +89,16 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Codeflix</h1>
-        <section class="banner">
-            <div class="image"></div>
-            <div class="content">
-                <h2>Unlimited movies, TV shows, and more</h2>
-                <p class="bold">Watch anywhere. Cancel anytime</p>
-                <p>Ready to watch?</p>
-            </div>
-        </section>
+    <h1>Codeflix</h1>
+    <section class="banner">
+        <div class="image"></div>
+        <div class="content">
+            <h2>Unlimited movies, TV shows, and more</h2>
+            <p class="bold">Watch anywhere. Cancel anytime</p>
+            <p>Ready to watch?</p>
+        </div>
+    </section>
+    <main class="max-auto">
         <section class="info">
             <div>
                 <h2>watch everywhere</h2>
@@ -110,10 +111,10 @@
                 </video>
             </div>
         </section>
-        <section id="shows">
+        <section id="shows" class="shows">
             <section>
                 <h2>New shows</h2>
-                <ul>
+                <ul class="list">
                     <li>
                         <figure>
                             <img src="assets/series/serie_1.jpg" alt="show 1">
@@ -142,7 +143,7 @@
             </section>
             <section>
                 <h2>Popular shows</h2>
-                <ul>
+                <ul class="list">
                     <li>
                         <figure>
                             <img src="assets/series/serie_5.jpg" alt="show 5">
@@ -180,11 +181,3 @@
 </body>
 
 </html>
-
-
-<section>
-    <h2>{param}</h2>
-    <ul>
-        <li></li>
-    </ul>
-</section>
