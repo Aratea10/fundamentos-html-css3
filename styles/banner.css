@@ -2,10 +2,10 @@
     height: 75vh;
     /* relative viewport */
     /*
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
-*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    */
     position: relative;
 
     .image {
@@ -15,10 +15,13 @@ background-position: center;
         bottom: 0;
         right: 0;
         left: 0;
+        opacity: 0.3;
     }
 
     .content {
         text-align: center;
+        z-index: 1;
+        position: relative;
     }
 
     p.bold {
